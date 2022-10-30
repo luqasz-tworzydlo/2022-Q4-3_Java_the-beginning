@@ -11,11 +11,11 @@ public class Main {
         System.out.println(ac);*/
 
         // 3.1
-        Point XY = new Point(5,7);
-        System.out.println(XY);
-        XY.ResetPoint(5,7);
-        System.out.println(XY);
-        XY.MovePoint(5,7);
-        System.out.println(XY);
+        Point point = new Point(46,-19);
+        System.out.println(point);
+        /*point.ResetPoint();
+        System.out.println(point);*/
+        point.MovePoint(-10,40);
+        System.out.println(point);
     }
 }
