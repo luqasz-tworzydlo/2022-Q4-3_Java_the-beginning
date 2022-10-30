@@ -19,21 +19,6 @@ public class Todo
     // metoda toString
 
     public String toString() {
-        String priorityTXT = "";
-        switch (priority){
-            case LOW -> priorityTXT = "niski priorytet";
-            case HIGH -> priorityTXT = "wysoki priorytet";
-            case MEDIUM -> priorityTXT = "średni priorytet";
-            default -> priorityTXT = "";
-        }
-        String categoryTXT = "";
-        switch (category){
-            case JOB -> categoryTXT = "kategoria: praca";
-            case HOME -> categoryTXT = "kategoria: dom";
-            case HEALTH -> categoryTXT = "kategoria: zdrowie";
-            case SCHOOL -> categoryTXT = "kategoria: szkoła";
-        }
-
-        return "zadanie: " + name + "\n -> " + priorityTXT + "\n -> " + categoryTXT + "\n -> " + finishDate;
+        return "zadanie: " + name + "\n -> " + priority.getTodo_priority() + "\n -> " + category.getTodo_category() + "\n -> " + finishDate;
     }
 }
