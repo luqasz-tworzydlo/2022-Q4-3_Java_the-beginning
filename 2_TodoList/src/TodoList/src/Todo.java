@@ -34,6 +34,6 @@ public class Todo
             case SCHOOL -> categoryTXT = "kategoria: szkoła";
         }
 
-        return name + "\n -> " + priorityTXT + "\n -> " + categoryTXT + "\n -> " + finishDate;
+        return "zadanie: " + name + "\n -> " + priorityTXT + "\n -> " + categoryTXT + "\n -> " + finishDate;
     }
 }
