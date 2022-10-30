@@ -22,9 +22,15 @@ public class Main {
         // sout + tab => System.out.println();
 
         // 4.1
-        Box box = new Box (34,13,91);
+        /*Box box = new Box (34,13,91);
         System.out.println(box);
         int result = box.Volume();
-        System.out.println("objętość pudełka wynosi: " + result);
+        System.out.println("objętość pudełka wynosi: " + result);*/
+
+        // 5.1
+        Student student = new Student("Avri",1,4);
+        System.out.println(student);
+
+        System.out.println(student);
     }
 }
