@@ -1,3 +1,7 @@
+import java.util.Scanner;
+
+import static java.lang.System.in;
+
 public class Main {
     public static void main(String[] args) {
         // 1.1
@@ -27,10 +31,31 @@ public class Main {
         int result = box.Volume();
         System.out.println("objętość pudełka wynosi: " + result);*/
 
-        // 5.1
-        Student student = new Student("Avri",1,4);
+        // 5.1 [a]
+        /*Student student = new Student("Avri",5,4);
+        System.out.println(student);
+        double result = student.average();
+        System.out.println("=> średnia ocen: " + result);*/
+        // 5.1 [b]
+        /*student.setGrade((26));
+        System.out.println(student);*/
+        // 5.1 [c]
+        /*Student student = new Student("Avri",245,2324);
+        System.out.println(student);
+        student.setGrade((40));
+        System.out.println(student);*/
+        // 5.1 [d]
+        Scanner sc = new Scanner(in);
+        String data = sc.nextLine();
+        System.out.println(data);
+
+        Student student = new Student("Avri",245,2324);
         System.out.println(student);
 
+        double result = student.average();
+        System.out.println("=> średnia ocen: " + result);
+
+        student.setGrade((40));
         System.out.println(student);
     }
 }
