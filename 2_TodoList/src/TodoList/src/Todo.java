@@ -16,6 +16,12 @@ public class Todo
         this.finishDate = finishDate;
     }
 
+    // getter
+
+    public String getName() {
+        return name;
+    }
+
     // metoda toString
 
     public String toString() {
