@@ -1,10 +1,11 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args)
     {
-        Laptop laptop1 = new Laptop("asus", ProcessorType.I5, OperatingSystem.WINDOWS10);
-        Laptop laptop2 = new Laptop("asus", ProcessorType.R5, OperatingSystem.WINDOWS11);
+        Todo todo = new Todo ("spracer z psem", Todo_priority.HIGH, Todo_category.HOME, LocalDate.of(2022,10,28));
 
-
+        System.out.println(todo);
 
     }
 }
