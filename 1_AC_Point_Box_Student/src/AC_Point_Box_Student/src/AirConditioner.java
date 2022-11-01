@@ -1,4 +1,5 @@
 public class AirConditioner {
+    // 2.2
     // 3 dane
     private int temperature;
     private int energyConsumption;

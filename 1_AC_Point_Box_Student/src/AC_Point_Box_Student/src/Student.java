@@ -41,7 +41,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student1\n=> surname='" + surname + "'" +
+        return "Student\n=> surname='" + surname + "'" +
                 "\n=> grade1=" + grade1 +
                 "\n=> grade2=" + grade2;
     }
