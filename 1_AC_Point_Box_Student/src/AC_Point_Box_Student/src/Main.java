@@ -46,16 +46,20 @@ public class Main {
         System.out.println(student);*/
         // 5.1 [d]
         Scanner sc = new Scanner(in);
-        String data = sc.nextLine();
-        System.out.println(data);
 
-        Student student = new Student("Avri",245,2324);
+        System.out.println("Podaj nazwisko studenta: ");
+        String surname = sc.nextLine();
+
+        System.out.println("Podaj pierwszą ocenę studenta: ");
+        String grade1 = sc.nextLine();
+
+        System.out.println("Podaj drugą ocenę studenta: ");
+        String grade2 = sc.nextLine();
+
+        Student student = new Student(surname, Double.parseDouble(grade1), Double.parseDouble(grade2));
         System.out.println(student);
 
         double result = student.average();
         System.out.println("=> średnia ocen: " + result);
-
-        student.setGrade((40));
-        System.out.println(student);
     }
 }
